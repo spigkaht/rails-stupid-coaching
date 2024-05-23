@@ -1,0 +1,16 @@
+<div class="container pt-5 text-center">
+  <h1 class="mt-5">Stupid Coach</h1>
+  <div class="d-flex flex-column justify-content-center">
+    <div>
+      <p> -You </p>
+      <p> <%= params[:question] %> </p>
+    </div>
+    <div class="bg-warning">
+      <p> -Your coach </p>
+      <p> <%= @answer %> </p>
+    </div>
+    <div>
+      <%= link_to "Ask another question", ask_path %>
+    </div>
+  </div>
+</div>
